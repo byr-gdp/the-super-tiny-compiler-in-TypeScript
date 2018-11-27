@@ -1,0 +1,19 @@
+{
+  "name": "the-super-tiny-compiler(typescript)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "1.0.0-rc.2"
+  }
+}
