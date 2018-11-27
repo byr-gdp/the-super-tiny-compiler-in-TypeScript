@@ -1,7 +1,4 @@
-interface Token {
-  type: string;
-  value: string;
-}
+import { Token } from './types';
 
 function tokenizer(input: string): Token[] {
   let current = 0;
