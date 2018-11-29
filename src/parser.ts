@@ -39,8 +39,7 @@ function parser(tokens: Token[]) {
         (token.type !== 'paren') ||
         (token.type === 'paren' && token.value !== ')')
       ) {
-        // FIXME: optional property
-        node.params && node.params.push(walk());
+        node.params!.push(walk());
         token = tokens[current];
       }
 
@@ -57,8 +56,7 @@ function parser(tokens: Token[]) {
   }
 
   while (current < tokens.length) {
-    // FIXME: optional property
-    ast.body && ast.body.push(walk());
+    ast.body!.push(walk());
   }
 
   return ast;
