@@ -1,11 +1,11 @@
 import test from 'ava';
-import tokenizer from '../dist/tokenizer';
-import parser from '../dist/parser';
 import {
+  tokenizer,
+  parser,
   traverser,
-  visitor
-} from '../dist/traverser';
-import { codeGenerator } from '../dist/generator';
+  visitor,
+  codeGenerator,
+} from '../dist/';
 
 test('tokenizer', (t) => {
   const tokens = tokenizer('(add 2 (subtract 4 2))');

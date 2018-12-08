@@ -1,4 +1,3 @@
-
 import { INode, IVisitor } from './@types';
 
 export function traverser(ast: INode, visitor: IVisitor) {

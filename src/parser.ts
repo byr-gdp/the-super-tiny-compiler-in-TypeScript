@@ -1,6 +1,6 @@
 import { INode, IToken } from './@types';
 
-function parser(tokens: IToken[]) {
+export function parser(tokens: IToken[]) {
   let current = 0;
 
   function walk(): INode {
@@ -61,5 +61,3 @@ function parser(tokens: IToken[]) {
 
   return ast;
 }
-
-export default parser;

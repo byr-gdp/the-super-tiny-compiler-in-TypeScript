@@ -1,6 +1,6 @@
 import { IToken } from './@types';
 
-function tokenizer(input: string): IToken[] {
+export function tokenizer(input: string): IToken[] {
   let current = 0;
   let tokens: IToken[] = [];
 
@@ -83,4 +83,3 @@ function tokenizer(input: string): IToken[] {
   return tokens;
 }
 
-export default tokenizer;
