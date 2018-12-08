@@ -1,9 +1,9 @@
-import { Token, Node } from './types';
+import { INode, IToken } from './@types';
 
-function parser(tokens: Token[]) {
+function parser(tokens: IToken[]) {
   let current = 0;
 
-  function walk(): Node {
+  function walk(): INode {
     let token = tokens[current];
 
     if (token.type === 'number') {
@@ -27,7 +27,7 @@ function parser(tokens: Token[]) {
     if (token.type === 'paren' && token.value === '(') {
       token = tokens[++current];
 
-      let node: Node = {
+      let node: INode = {
         type: 'CallExpression',
         value: token.value,
         params: [],
@@ -50,7 +50,7 @@ function parser(tokens: Token[]) {
     throw new TypeError(token.type);
   }
 
-  const ast: Node = {
+  const ast: INode = {
     type: 'Program',
     body: [],
   }

@@ -1,8 +1,8 @@
-import { Token } from './types';
+import { IToken } from './@types';
 
-function tokenizer(input: string): Token[] {
+function tokenizer(input: string): IToken[] {
   let current = 0;
-  let tokens: Token[] = [];
+  let tokens: IToken[] = [];
 
   while (current < input.length) {
     let char = input[current];
