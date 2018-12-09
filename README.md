@@ -13,3 +13,7 @@ Refer to [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny
 ## Test
 
 `npm test`
+
+## Todo
+
+- [ ] 如何避免手动引入定义文件。

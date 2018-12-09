@@ -1,3 +1,7 @@
+/**
+ * 类型定义文件
+ */
+
 // 源码解析 Token
 export interface IToken {
   type: string;

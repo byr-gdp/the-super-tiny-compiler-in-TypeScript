@@ -7,13 +7,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "ava",
-    "build": "tsc"
+    "clean": "rm -rf dist",
+    "test": "npx ava",
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ava": "1.0.0-rc.2"
+    "ava": "1.0.0-rc.2",
+    "typescript": "^3.2.2"
   }
 }
